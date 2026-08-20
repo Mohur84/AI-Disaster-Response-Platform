@@ -6,7 +6,7 @@ Lambda, API Gateway, Docker, and DynamoDB Local**.
 > **Status:** Fully working locally with AWS SAM + Docker + DynamoDB
 > Local.
 
-## Features
+## 📑 Features
 
 -   Interactive map (Leaflet + OpenStreetMap)
 -   Incident reporting with severity levels
@@ -15,19 +15,19 @@ Lambda, API Gateway, Docker, and DynamoDB Local**.
 -   DynamoDB Local integration
 -   Docker-based testing without AWS deployment
 
-## Screenshots
+## 📷 Screenshots
 
 ### Live API Mode
 
-![Live API Dashboard]
 <img width="1874" height="884" alt="Screenshot 2026-08-20 010148" src="https://github.com/user-attachments/assets/1ea16e55-ce25-4c09-aea0-33e7559fe084" />
 
 
 ### Report Incident
+
 <img width="1873" height="879" alt="image" src="https://github.com/user-attachments/assets/00c29e40-f8ff-4620-b66f-198113fa37fc" />
 
 
-## Architecture
+## 🛠️ Architecture
 
 ``` text
 User
@@ -46,7 +46,7 @@ AWS SAM Local (:3000)
 DynamoDB Local (:8000)
 ```
 
-## Project Structure
+## ⚙️ Project Structure
 
 ``` text
 backend/
@@ -62,7 +62,7 @@ frontend/
 template.yaml
 ```
 
-## Local Setup
+## 🔬 Local Setup
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ Expected status:
 Mode: connected to http://127.0.0.1:3000
 ```
 
-## API Endpoints
+## 🗜️ API Endpoints
 
   Method   Endpoint
   -------- ------------------------------
@@ -120,7 +120,7 @@ Mode: connected to http://127.0.0.1:3000
   GET      `/incidents/{id}`
   POST     `/incidents/{id}/upload-url`
 
-## AWS Services
+## 📦 AWS Services
 
 -   AWS SAM
 -   AWS Lambda
@@ -129,21 +129,14 @@ Mode: connected to http://127.0.0.1:3000
 -   Docker
 -   DynamoDB Local
 
-## Resume Highlights
 
--   Built a serverless disaster response platform with AWS SAM.
--   Developed Lambda-based REST APIs.
--   Integrated DynamoDB for persistent incident storage.
--   Implemented Docker-based local AWS testing.
--   Created an interactive mapping interface with Leaflet.
-
-## Production Deployment
+## 📟 Production Deployment
 
 ``` bash
 sam deploy --guided
 ```
 
-## Tech Stack
+## 📠 Tech Stack
 
 -   HTML
 -   CSS
