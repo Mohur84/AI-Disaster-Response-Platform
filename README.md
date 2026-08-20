@@ -69,7 +69,7 @@ template.yaml
 -   Python 3.12
 -   Docker Desktop
 -   AWS SAM CLI
--   Live Server (Cursor)
+-   Live Server (VS code extension)
 
 ### Start DynamoDB
 
