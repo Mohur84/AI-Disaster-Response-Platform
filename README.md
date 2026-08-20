@@ -19,11 +19,13 @@ Lambda, API Gateway, Docker, and DynamoDB Local**.
 
 ### Live API Mode
 
-![Live API Dashboard](assets/live-api-dashboard.png)
+![Live API Dashboard]
+<img width="1874" height="884" alt="Screenshot 2026-08-20 010148" src="https://github.com/user-attachments/assets/1ea16e55-ce25-4c09-aea0-33e7559fe084" />
+
 
 ### Report Incident
+<img width="1873" height="879" alt="image" src="https://github.com/user-attachments/assets/00c29e40-f8ff-4620-b66f-198113fa37fc" />
 
-![Report Incident](assets/report-incident-modal.png)
 
 ## Architecture
 
