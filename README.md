@@ -30,20 +30,32 @@ Lambda, API Gateway, Docker, and DynamoDB Local**.
 ## 🛠️ Architecture
 
 ``` text
-User
- │
- ▼
-Frontend (Live Server :5500)
- │
- ▼
-AWS SAM Local (:3000)
- │
- ├── List Lambda
- ├── Create Lambda
- └── Get Lambda
- │
- ▼
-DynamoDB Local (:8000)
+               USER
+                │
+                ▼
+     ┌─────────────────────┐
+     │ Frontend (HTML/JS)  │
+     │ Live Server :5500   │
+     └──────────┬──────────┘
+                │ HTTP
+                ▼
+     ┌─────────────────────┐
+     │ AWS SAM Local       │
+     │ API Gateway :3000   │
+     └──────────┬──────────┘
+                │
+      ┌─────────┴─────────┐
+      ▼                   ▼
+┌──────────────┐   ┌──────────────┐
+│ List Lambda  │   │ Create Lambda│
+└──────┬───────┘   └──────┬───────┘
+       │                  │
+       └────────┬─────────┘
+                ▼
+     ┌─────────────────────┐
+     │ DynamoDB Local      │
+     │ disaster-incidents  │
+     └─────────────────────┘
 ```
 
 ## ⚙️ Project Structure
@@ -63,6 +75,22 @@ template.yaml
 ```
 
 ## 🔬 Local Setup
+
+``` text
+Browser
+   │
+   ▼
+Live Server (:5500)
+   │
+   ▼
+SAM Local (:3000)
+   │
+   ▼
+Lambda Functions
+   │
+   ▼
+DynamoDB Local (:8000)
+```
 
 ### Prerequisites
 
